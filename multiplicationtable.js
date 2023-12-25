@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Defined Multiplication Table</title>
+</head>
+<body>
+
+<table>
+  <tr>
+    <td>Enter the number which you want:</td>
+    <td><input type="text" id="num1"></td>
+  </tr>
+  <tr>
+    <td>Enter Upto where:</td>
+    <td><input type="text" id="num2"></td>
+  </tr>
+  <tr>
+    <td><input type="submit" onclick="printDocument()"></td>
+  </tr>
+</table>
+
+<script>
+  function printDocument() {
+    var i = parseInt(document.getElementById("num1").value);
+    var j = parseInt(document.getElementById("num2").value);
+    document.write("<h2>Multiplication Table</h2>");
+    for (var x = 1; x <= j; x++) {
+      document.write(i + " x " + x + " = " + i * x + "<br>");
+    }
+  }
+</script>
+
+</body>
+</html>
+  
